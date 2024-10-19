@@ -50,6 +50,7 @@ void process_line(std::string line) {
 	  if (command == "-") new_value -= operated_value;
 	  if (command == "*") new_value *= operated_value;
 	  if (command == "/") new_value /= operated_value;
+	  if (command == "^") new_value = pow(new_value, operated_value);
 	}
 	variables[words[1]] = new_value;	
   } else if (command == "print") {
