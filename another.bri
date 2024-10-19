@@ -1,0 +1,6 @@
+set a 1010
+set b 1010
++ a b 01 0111
+- a 01 01 01
+/ a b 011
+print _variables: \ a \ b \
