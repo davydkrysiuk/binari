@@ -1,6 +1,36 @@
-set a 1010
-set b 1010
-+ a b 01 0111
-- a 01 01 01
-/ a b 011
-print _variables: \ a \ b \
+set negative 01
+- negative 10
+
+set a 1
+set b 101
+* b negative
+set c 110
+
+set discriminant b
+* discriminant discriminant
+
+set takeaway a
+* takeaway 100 c
+- discriminant takeaway
+
+set half 01
+/ half 10
+^ discriminant half
+
+set 2a a
+* 2a 10
+
+set negative_b b
+* negative_b negative
+
+set first negative_b
+set second negative_b
+
+- first discriminant
++ second discriminant
+
+/ first 2a
+/ second 2a
+
+print _Inputs: \ a \ b \ c \
+print _Inputs: \ first \ second \
